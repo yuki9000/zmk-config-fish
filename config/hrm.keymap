@@ -1,0 +1,55 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+&mt {
+    tapping-term-ms = <175>;
+    flavor = "tap-preferred";
+};
+
+&lt {
+    tapping-term-ms = <175>;
+    flavor = "balanced";
+};
+
+/ {
+   keymap {
+      compatible = "zmk,keymap";
+
+      layer_0 {
+         bindings = <
+                        &kp L       &kp U       &kp F       &kp DOT             &kp K       &kp W       &kp R       &kp Y
+&kp Q       &mt LALT E  &mt LGUI I  &mt LSHFT A &mt LCTRL O &kp COMMA           &kp G       &mt RCTRL T &mt RSHFT N &mt RGUI S  &mt RALT H  &kp P
+            &kp Z       &kp X       &kp C       &kp V                                       &kp D       &kp M       &kp J       &kp B
+                                                &lt 1 BSPC  &kp ENTER           &kp TAB     &lt 2 SPACE
+         >;
+      };
+
+      layer_1 {
+         bindings = <
+                        &kp L       &kp U       &kp F       &kp DOT             &kp K       &kp W       &kp R       &kp Y
+&kp Q       &mt LSHFT E &mt LGUI I  &mt LALT A  &mt LCTRL O &kp COMMA           &kp G       &mt LCMD T  &mt LCMD N  &mt LCMD S  &mt LCMD H  &kp P
+            &kp Z       &kp X       &kp C       &kp V                                       &kp D       &kp M       &kp J       &kp B
+                                                &none       &trans              &trans      &lt 3 SPACE
+         >;
+      };
+
+      layer_2 {
+         bindings = <
+                        &kp L       &kp U       &kp F       &kp DOT             &kp K       &kp W       &kp R       &kp Y
+&kp Q       &mt LSHFT E &mt LGUI I  &mt LALT A  &mt LCTRL O &kp COMMA           &kp G       &mt LCMD T  &mt LCMD N  &mt LCMD S  &mt LCMD H  &kp P
+            &kp Z       &kp X       &kp C       &kp V                                       &kp D       &kp M       &kp J       &kp B
+                                                &lt 3 BSPC  &trans              &trans      &none
+         >;
+      };
+
+      layer_3 {
+         bindings = <
+                        &kp L       &kp U       &kp F       &kp DOT             &kp K       &kp W       &kp R       &kp Y
+&kp Q       &mt LSHFT E &mt LGUI I  &mt LALT A  &mt LCTRL O &kp COMMA           &kp G       &mt LCMD T  &mt LCMD N  &mt LCMD S  &mt LCMD H  &kp P
+            &kp Z       &kp X       &kp C       &kp V                                       &kp D       &kp M       &kp J       &kp B
+                                                &none       &trans              &trans      &none
+         >;
+      };
+   };
+};
