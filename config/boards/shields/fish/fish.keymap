@@ -29,12 +29,12 @@
         timeout-ms = <200>;
         
         combo_left_thumb {
-            key-positions = <28 29>;
+            key-positions = <10 11>;
             bindings = <&kp LANG2>;
         };
 
         combo_right_thumb {
-            key-positions = <30 31>;
+            key-positions = <16 17>;
             bindings = <&kp LANG1>;
         };
     };
@@ -48,18 +48,18 @@
 
         layer_0 {
             bindings = <
-                        &kp L       &kp U       &kp F       &kp COMMA           &kp K        &kp W       &kp R       &kp Y
-&kp Q       &kp E       &mt LCTRL I &mt LALT A  &mt LSHFT O &kp MINUS           &kp G        &mt RSHFT T &mt RALT N  &mt RCTRL S &kp H       &kp P
-            &kp Z       &kp X       &kp C       &kp V                                        &kp D       &kp M       &kp J       &kp B
-                                                &lt 1 BSPC  &mt LGUI ENTER      &mt RGUI TAB &lt 2 SPACE
+                        &kp L       &kp U       &kp F       &kp COMMA           &kp K       &kp W       &kp R       &kp Y
+&kp Q       &kp E       &mt LCTRL I &mt LALT A  &mt LSHFT O &kp MINUS           &kp G       &mt RSHFT T &mt RALT N  &mt RCTRL S &kp H       &kp P
+            &kp Z       &kp X       &kp C       &kp V                                       &kp D       &kp M       &kp J       &kp B
+                                                &lt 1 BSPC  &mt LGUI ENTER     &mt RGUI TAB &lt 2 SPACE
             >;
         };
 
         layer_1 {
             bindings = <
-                        &kp N0      &kp N9      &kp N8      &kp DOT             &kp CARET   &kp LT      &kp EQUAL   &kp GT
-&kp LA(BSLH) &kp N4    &mt LCTRL N3 &mt LALT N2 &mt LSHFT N1 &trans            &kp UNDER &mt RSHFT PLUS &mt RALT MINUS &mt RCTRL ASTRK &kp SLASH &kp PERCENT
-            &kp DOLLAR  &kp N7      &kp N6      &kp N5                                      &kp EXCL    &kp QMARK   &kp SEMI    &kp COLON
+                        &kp N0      &kp N9      &kp N8      &kp DOT             &kp DOLLAR  &kp LT      &kp EQUAL   &kp GT
+&kp CARET   &kp N4     &mt LCTRL N3 &mt LALT N2 &mt LSHFT N1 &trans            &kp TILDE &mt RSHFT PLUS &mt RALT MINUS &mt RCTRL ASTRK &kp SLASH &kp PERCENT
+            &kp UNDER   &kp N7      &kp N6      &kp N5                                      &kp EXCL    &kp QMARK   &kp SEMI    &kp COLON
                                                 &none       &trans              &trans      &lt 3 SPACE 
             >;
         };
@@ -75,9 +75,9 @@
 
         layer_3 {
             bindings = <
-                       &out OUT_USB &out OUT_BLE &none      &none               &none       &none        &none        &none
-&bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR     &none       &none        &none        &none        &none        &none
-            &none       &none       &none       &none                                       &none        &none        &none        &none
+                       &out OUT_USB &out OUT_BLE &none      &none               &none       &none       &none       &none
+&bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR     &none       &none       &none       &none       &none       &none
+            &none       &none       &none       &none                                       &none       &none       &none       &none
                                                 &none       &none               &none       &none
             >;
         };
