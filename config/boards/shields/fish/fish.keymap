@@ -29,12 +29,12 @@
         timeout-ms = <200>;
         
         combo_left_thumb {
-            key-positions = <10 11>;
+            key-positions = <28 29>;
             bindings = <&kp LANG2>;
         };
 
         combo_right_thumb {
-            key-positions = <16 17>;
+            key-positions = <30 31>;
             bindings = <&kp LANG1>;
         };
     };
@@ -75,8 +75,8 @@
 
         layer_3 {
             bindings = <
-                       &out OUT_USB &out OUT_BLE &none      &none               &none       &none       &none       &none
-&bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR     &none       &none       &none       &none       &none       &none
+                        &none       &none       &none       &none               &none       &none       &none       &none
+&none       &none       &none       &none       &none       &none               &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
             &none       &none       &none       &none                                       &none       &none       &none       &none
                                                 &none       &none               &none       &none
             >;
