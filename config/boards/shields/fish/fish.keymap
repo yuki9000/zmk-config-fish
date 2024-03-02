@@ -6,7 +6,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+
 // タップ・ホールド複合キーの挙動を調整できる
+
 &mt {
     flavor = "balanced";
     tapping-term-ms = <200>;
@@ -28,8 +30,8 @@
     // 8  9 10 11 12 13    14 15 16 17 18 19
     //   20 21 22 23          24 25 26 27
     //            28 29    30 31
-    combos{
 
+    combos{
         compatible = "zmk,combos";
         timeout-ms = <200>;
         
@@ -44,9 +46,11 @@
         };
     };
     
-    // キーの割り当てをカスタマイズする
+
+    // キーを割り当てる
     // 型（&...）は https://zmk.dev/docs/behaviors/... を参照
     // キーコードは https://zmk.dev/docs/codes/... を参照
+
     keymap {
 
         compatible = "zmk,keymap";
