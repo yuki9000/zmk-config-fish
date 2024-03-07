@@ -35,12 +35,12 @@
         compatible = "zmk,combos";
         timeout-ms = <200>;
         
-        ローマ字にするコンボだよ {
+        1_combo {
             key-positions = <11 12>;
             bindings = <&kp LANG2>;
         };
 
-        ローマ字入力モードにするコンボだよ {
+        2_combo {
             key-positions = <15 16>;
             bindings = <&kp LANG1>;
         };
@@ -73,7 +73,7 @@
             >;
         };
 
-        レイヤー3つめだよ {
+        2_layer {
             bindings = <
                         &kp LBKT    &kp DQT     &kp RBKT    &kp AMPS           &kp C_VOL_UP &kp ESC     &kp UP      &kp CAPS
 &kp AT      &kp HASH &mt LCTRL LPAR &mt LALT SQT &mt LSHFT RPAR &kp PIPE    &kp C_VOL_DN &mt RSHFT LEFT &mt RALT DOWN &mt RCTRL RIGHT &kp C_BRI_UP &kp GLOBE
