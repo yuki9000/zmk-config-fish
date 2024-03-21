@@ -1,10 +1,8 @@
 # Copyright (c) 2021 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-# uncomment if left-centered
+# 親機にしたい方をコメントアウト
 if SHIELD_FISH_LEFT
-
-# uncomment if right-centered
 # if SHIELD_FISH_RIGHT
 
 config ZMK_KEYBOARD_NAME
