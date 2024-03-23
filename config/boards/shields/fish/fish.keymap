@@ -13,16 +13,15 @@
 // 複合キーの挙動を調整できる
 
 &mt {
-    flavor = "balanced";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <200>;
-    require-prior-idle-ms = <125>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <175>;
+    quick-tap-ms = <175>;
 };
 
 &lt {
     flavor = "balanced";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <200>;
+    tapping-term-ms = <175>;
+    quick-tap-ms = <175>;
 };
 
 &sk {
@@ -95,7 +94,7 @@
         layer_2_navi {
             bindings = <
                         &kp LBKT    &kp DQT     &kp RBKT    &kp AMPS            &kp C_VOL_UP &kp ESC    &kp UP      &kp CAPS
-&kp AT      &kp HASH    &mt LCTRL LPAR &mt LALT SQT &mt LSHFT RPAR &kp PIPE     &kp C_VOL_DN &mt RSHFT LEFT &mt RALT DOWN &mt RCTRL RIGHT &kp C_BRI_UP &kp GLOBE
+&kp AT      &kp HASH    &mt LCTRL LPAR &mt LALT SQT &mt LSHFT RPAR &kp PIPE     &kp C_VOL_DN &kp LEFT   &kp DOWN    &kp RIGHT  &kp C_BRI_UP &kp GLOBE
             &kp BSLH    &kp LBRC    &kp GRAVE   &kp RBRC                                    &kp C_PREV  &kp C_PP    &kp C_NEXT &kp C_BRI_DN
                                                 &lt 3 BSPC  &trans              &trans      &none
             >;
