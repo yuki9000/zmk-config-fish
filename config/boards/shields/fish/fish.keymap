@@ -14,14 +14,14 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <175>;
-    quick-tap-ms = <175>;
+    tapping-term-ms = <200>;
+    quick-tap-ms = <200>;
 };
 
 &lt {
     flavor = "balanced";
-    tapping-term-ms = <175>;
-    quick-tap-ms = <175>;
+    tapping-term-ms = <200>;
+    quick-tap-ms = <200>;
 };
 
 &sk {
@@ -62,6 +62,16 @@
         combo_kp_lang1 {
             key-positions = <15 16>;
             bindings = <&kp LANG1>;
+        };
+
+        combo_reset_l {
+            key-positions = <2 3 12 13 23>;
+            bindings = <&bootloader>;
+        };
+
+        combo_reset_r {
+            key-positions = <4 5 14 15 24>;
+            bindings = <&bootloader>;
         };
     };
     
