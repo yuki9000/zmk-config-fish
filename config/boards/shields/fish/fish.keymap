@@ -73,6 +73,11 @@
             key-positions = <4 5 14 15 24>;
             bindings = <&bootloader>;
         };
+
+        combo_reset_r2 {
+            key-positions = <14 15>;
+            bindings = <&bootloader>;
+        };
     };
     
 
