@@ -51,7 +51,7 @@
     //            28 29    30 31
 
     combos {
-        compatible = "zmk,combos";
+        compatible = "zmk, combos";
         timeout-ms = <100>;
         
         combo_kp_lang2 {
