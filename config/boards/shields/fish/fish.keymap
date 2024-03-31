@@ -51,7 +51,6 @@
     //            28 29    30 31
 
     combos {
-        compatible = "zmk, combos";
         timeout-ms = <100>;
         
         combo_kp_lang2 {
@@ -64,25 +63,7 @@
             bindings = <&kp LANG1>;
         };
 
-        combo_reset_l {
-            key-positions = <2 3 12 13 23>;
-            bindings = <&bootloader>;
-        };
-
-        combo_reset_r {
-            key-positions = <4 5 14 15 24>;
-            bindings = <&bootloader>;
-        };
-
-        combo_reset_r2 {
-            key-positions = <14 15>;
-            bindings = <&bootloader>;
-        };
-
-        combo_reset_l2 {
-            key-positions = <12 13>;
-            bindings = <&bootloader>;
-        };
+        compatible = "zmk,combos";
     };
     
 
