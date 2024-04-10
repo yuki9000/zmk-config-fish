@@ -87,7 +87,7 @@
             >;
         };
 
-        layer_undefined {
+        layer_math {
             bindings = <
                         &kp N0      &kp N9      &kp N8      &trans              &kp DLLR    &kp LT      &kp EQUAL   &kp GT      
 &kp CARET   &kp N4      &mt LCTRL N3 &mt LALT N2 &mt LSHFT N1 &kp DOT           &kp TILDE   &mt RSHFT PLUS &mt RALT MINUS &mt RCTRL STAR &kp FSLH &kp PRCNT 
@@ -96,7 +96,7 @@
             >;
         };
 
-        layer_undefined {
+        layer_navi {
             bindings = <
                         &kp LBKT    &kp DQT     &kp RBKT    &kp AMPS            &kp C_VOL_UP &kp ESC    &kp UP      &caps_word  
 &kp AT      &kp HASH    &mt LCTRL LPAR &mt LALT SQT &mt LSHFT RPAR &kp PIPE     &kp C_VOL_DN &kp LEFT   &kp DOWN    &kp RIGHT   &kp C_BRI_UP &kp GLOBE  
@@ -105,7 +105,7 @@
             >;
         };
 
-        layer_undefined {
+        layer_system {
             bindings = <
                         &bt BT_SEL 0 &out OUT_BLE &out OUT_USB &bt BT_CLR_ALL   &none       &none       &none       &none       
 &bt BT_DISC 0 &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_CLR    &none       &kp LS(LG(N3)) &kp LS(LG(N4)) &kp LS(LG(N5)) &kp C_PWR &none 
