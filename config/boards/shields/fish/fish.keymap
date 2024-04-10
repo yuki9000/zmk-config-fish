@@ -14,22 +14,24 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <200>;
     quick-tap-ms = <200>;
 };
 
 &lt {
     flavor = "balanced";
-    tapping-term-ms = <200>;
     quick-tap-ms = <200>;
 };
 
 &sk {
-    release-after-ms = <1000>;
 };
 
 &sl {
-    release-after-ms = <1000>;
+};
+
+&caps_word {
+};
+
+&key_repeat {
 };
 
 
@@ -40,6 +42,9 @@
     };
 
     macros {
+    };
+
+    conditional_layers {
     };
 
 
@@ -53,25 +58,15 @@
     combos {
         compatible = "zmk,combos";
         timeout-ms = <100>;
-        
-        combo_kp_lang2 {
+
+        combo_lang2 {
             key-positions = <11 12>;
             bindings = <&kp LANG2>;
         };
 
-        combo_kp_lang1 {
+        combo_lang1 {
             key-positions = <15 16>;
             bindings = <&kp LANG1>;
-        };
-
-        combo_reset_l {
-            key-positions = <2 3 12 13 23>;
-            bindings = <&bootloader>;
-        };
-
-        combo_reset_r {
-            key-positions = <4 5 14 15 24>;
-            bindings = <&bootloader>;
         };
     };
     
@@ -85,37 +80,37 @@
 
         layer_default {
             bindings = <
-                        &kp L       &kp U       &kp F       &kp MINUS           &kp K       &kp W       &kp R       &kp Y
-&kp Q       &kp E       &mt LCTRL I &mt LALT A  &mt LSHFT O &kp COMMA           &kp G       &mt RSHFT T &mt RALT N  &mt RCTRL S &kp H       &kp P
-            &kp Z       &kp X       &kp C       &kp V                                       &kp D       &kp M       &kp J       &kp B
-                                                &lt 1 BSPC  &mt LGUI ENTER     &mt RGUI TAB &lt 2 SPACE
+                        &kp L       &kp U       &kp F       &kp MINUS           &kp K       &kp W       &kp R       &kp Y       
+&kp Q       &kp E       &mt LCTRL I &mt LALT A  &mt LSHFT O &kp COMMA           &kp G       &mt RSHFT T &mt RALT N  &mt RCTRL S &kp H       &kp P       
+            &kp Z       &kp X       &kp C       &kp V                                       &kp D       &kp M       &kp J       &kp B       
+                                                &lt 1 BSPC  &mt LGUI RET        &mt RGUI TAB &lt 2 SPACE 
             >;
         };
 
-        layer_1_math {
+        layer_undefined {
             bindings = <
-                        &kp N0      &kp N9      &kp N8      &trans              &kp DOLLAR  &kp LT      &kp EQUAL   &kp GT
-&kp CARET   &kp N4      &mt LCTRL N3 &mt LALT N2 &mt LSHFT N1 &kp DOT           &kp TILDE   &mt RSHFT PLUS &mt RALT MINUS &mt RCTRL ASTRK &kp SLASH &kp PERCENT
-            &kp UNDER   &kp N7      &kp N6      &kp N5                                      &kp EXCL    &kp QMARK   &kp COLON   &kp SEMI
+                        &kp N0      &kp N9      &kp N8      &trans              &kp DLLR    &kp LT      &kp EQUAL   &kp GT      
+&kp CARET   &kp N4      &mt LCTRL N3 &mt LALT N2 &mt LSHFT N1 &kp DOT           &kp TILDE   &mt RSHFT PLUS &mt RALT MINUS &mt RCTRL STAR &kp FSLH &kp PRCNT 
+            &kp UNDER   &kp N7      &kp N6      &kp N5                                      &kp EXCL    &kp QMARK   &kp COLON   &kp SEMI    
                                                 &none       &trans              &trans      &lt 3 SPACE 
             >;
         };
 
-        layer_2_navi {
+        layer_undefined {
             bindings = <
-                        &kp LBKT    &kp DQT     &kp RBKT    &kp AMPS            &kp C_VOL_UP &kp ESC    &kp UP      &kp CAPS
-&kp AT      &kp HASH    &mt LCTRL LPAR &mt LALT SQT &mt LSHFT RPAR &kp PIPE     &kp C_VOL_DN &kp LEFT   &kp DOWN    &kp RIGHT  &kp C_BRI_UP &kp GLOBE
-            &kp BSLH    &kp LBRC    &kp GRAVE   &kp RBRC                                    &kp C_PREV  &kp C_PP    &kp C_NEXT &kp C_BRI_DN
-                                                &lt 3 BSPC  &trans              &trans      &none
+                        &kp LBKT    &kp DQT     &kp RBKT    &kp AMPS            &kp C_VOL_UP &kp ESC    &kp UP      &caps_word  
+&kp AT      &kp HASH    &mt LCTRL LPAR &mt LALT SQT &mt LSHFT RPAR &kp PIPE     &kp C_VOL_DN &kp LEFT   &kp DOWN    &kp RIGHT   &kp C_BRI_UP &kp GLOBE  
+            &kp BSLH    &kp LBRC    &kp GRAVE   &kp RBRC                                    &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_BRI_DN 
+                                                &lt 3 BSPC  &trans              &trans      &none       
             >;
         };
 
-        layer_3_system {
+        layer_undefined {
             bindings = <
-                &kp LS(LG(N5)) &kp LS(LG(N4)) &kp LS(LG(N3)) &bt BT_CLR_ALL     &none       &none       &none       &none
-&bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR     &none       &none       &none       &none       &none       &none
-            &none       &none       &none       &none                                       &none       &none       &none       &none
-                                                &none       &none               &none       &none
+                        &bt BT_SEL 0 &out OUT_BLE &out OUT_USB &bt BT_CLR_ALL   &none       &none       &none       &none       
+&bt BT_DISC 0 &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_CLR    &none       &kp LS(LG(N3)) &kp LS(LG(N4)) &kp LS(LG(N5)) &kp C_PWR &none 
+            &bt BT_DISC 4 &bt BT_DISC 3 &bt BT_DISC 2 &bt BT_DISC 1                         &none       &none       &none       &none       
+                                                &none       &none               &none       &none       
             >;
         };
     };
