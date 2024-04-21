@@ -1,7 +1,10 @@
 # Copyright (c) 2021 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
+# 親機にしたい方をコメント解除
 if SHIELD_FISH_LEFT
+# if SHIELD_FISH_RIGHT
+
 
 config ZMK_KEYBOARD_NAME
     default "Fish Keyboard"
