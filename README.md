@@ -2,11 +2,11 @@
 これは、[おさかなキーボード](https://o24.works/fish/)のためのZMK Firmareの設定リポジトリです。  
   
 ## 書き換えていいファイル  
-### [fish.keymap](https://github.com/TakumaOnishi/zmk-config-fish/blob/master/config/boards/shields/fish/fish.keymap)  
+### [fish.keymap](config/boards/shields/fish/fish.keymap)  
 キーの割り当てや入力の内容を設定できます。このファイルを視覚的に編集できる[キーマップエディター](https://o24.works/fish/editor/)も活用してください。  
-### [fish.conf](https://github.com/TakumaOnishi/zmk-config-fish/blob/master/config/boards/shields/fish/fish.conf)  
+### [fish.conf](config/boards/shields/fish/fish.conf)  
 スリープ時間、検出名など、キーボード本体の挙動を設定できます。  
-### [Kconfig.defconfig](https://github.com/TakumaOnishi/zmk-config-fish/blob/master/config/boards/shields/fish/Kconfig.defconfig)
+### [Kconfig.defconfig](config/boards/shields/fish/Kconfig.defconfig)
 親機の左右を変えることができます。  
   
 ## デフォルトキーマップ
