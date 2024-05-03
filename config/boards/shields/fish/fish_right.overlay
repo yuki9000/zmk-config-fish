@@ -1,4 +1,3 @@
-
 #include "fish.dtsi"
 
 &default_transform {

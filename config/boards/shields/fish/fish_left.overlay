@@ -1,4 +1,3 @@
-
 #include "fish.dtsi"
 
 &kscan0{
