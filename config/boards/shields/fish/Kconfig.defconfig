@@ -1,17 +1,13 @@
 # Copyright (c) 2021 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
+
 # 親機にしたい方を読ませる
 if SHIELD_FISH_LEFT
 # if SHIELD_FISH_RIGHT
 
-
-config ZMK_KEYBOARD_NAME
-    default "Fish Keyboard"
-
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
-
 endif
 
 
@@ -19,5 +15,4 @@ if SHIELD_FISH_LEFT || SHIELD_FISH_RIGHT
 
 config ZMK_SPLIT
     default y
-
 endif
