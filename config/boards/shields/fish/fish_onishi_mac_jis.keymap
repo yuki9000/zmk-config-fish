@@ -63,12 +63,12 @@
         timeout-ms = <150>;
         require-prior-idle-ms = <150>;
 
-        combo_eisu {
+        combo_lang2 {
             key-positions = <21 22>;
             bindings = <&kp CAPS>;
         };
 
-        combo_kana {
+        combo_lang1 {
             key-positions = <25 26>;
             bindings = <&kp INT2>;
         };
