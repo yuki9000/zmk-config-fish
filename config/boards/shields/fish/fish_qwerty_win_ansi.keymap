@@ -1,4 +1,4 @@
-// デフォルトキーマップ（QWERTY配列、Win優先、JIS方式）
+// デフォルトキーマップ（QWERTY配列、Win優先、ANSI方式）
 // キーマップを更新する方法は https://o24.works/fish/guide を参照
 // 視覚的に編集するには https://o24.works/fish/editor を参照
 
@@ -87,24 +87,24 @@
                         &kp W       &kp E       &kp R       &kp T               &kp Y       &kp U       &kp I       &kp O       
 &kp Q       &kp A       &mt LGUI S  &mt LALT D  &mt LSHFT F &kp G               &kp H       &mt RSHFT J &mt RALT K  &mt RGUI L  &kp P       &kp BSPC    
             &kp Z       &kp X       &kp C       &kp V                                       &kp M       &kp COMMA   &kp DOT     &kp RET     
-                                                &lt 1 B     &mt LGUI TAB        &mt RCTRL SPACE &lt 2 N 
+                                                &lt 1 B     &mt LCTRL TAB       &mt RCTRL SPACE &lt 2 N 
             >;
         };
 
         layer_math {
             bindings = <
-                        &kp N1      &kp N2      &kp N3      &trans              &kp EQUAL   &kp LT      &kp UNDER   &kp GT      
-&kp PLUS    &kp N0      &mt LGUI N4 &mt LALT N5 &mt LSHFT N6 &kp DOT            &kp LS(INT1) &mt RSHFT COLON &mt RALT MINUS &mt RGUI DQT &kp FSLH &kp PRCNT 
-            &kp DLLR    &kp N7      &kp N8      &kp N9                                      &kp EXCL    &kp QMARK   &kp SQT     &kp SEMI    
+                        &kp N1      &kp N2      &kp N3      &trans              &kp CARET   &kp LT      &kp EQUAL   &kp GT      
+&kp TILDE   &kp N0      &mt LGUI N4 &mt LALT N5 &mt LSHFT N6 &kp DOT            &kp UNDER   &mt RSHFT PLUS &mt RALT MINUS &mt RGUI STAR &kp FSLH &kp PRCNT 
+            &kp DLLR    &kp N7      &kp N8      &kp N9                                      &kp EXCL    &kp QMARK   &kp COLON   &kp SEMI    
                                                 &none       &trans              &trans      &lt 6 N     
             >;
         };
 
         layer_navi {
             bindings = <
-                        &kp RBKT    &kp AT      &kp NUHS    &kp CARET           &kp C_VOL_UP &kp ESC    &kp UP      &kp LS(CAPS) 
-&kp LBKT    &kp HASH    &mt LGUI STAR &mt LALT AMPS &mt LSHFT LPAR &kp LS(INT3) &kp C_VOL_DN &kp LEFT   &kp DOWN    &kp RIGHT   &kp C_BRI_UP &kp LS(LG(N3)) 
-            &kp INT1    &kp RBRC    &kp LBRC    &kp TILDE2                                  &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_BRI_DN 
+                        &kp LBKT    &kp DQT     &kp RBKT    &kp AMPS            &kp C_VOL_UP &kp ESC    &kp UP      &kp CAPS    
+&kp AT      &kp HASH    &mt LGUI LPAR &mt LALT SQT &mt LSHFT RPAR &kp PIPE      &kp C_VOL_DN &kp LEFT   &kp DOWN    &kp RIGHT   &kp C_BRI_UP &kp LS(LG(N3)) 
+            &kp BSLH    &kp LBRC    &kp GRAVE   &kp RBRC                                    &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_BRI_DN 
                                                 &lt 6 B     &trans              &trans      &none       
             >;
         };
@@ -114,24 +114,24 @@
                         &kp W       &kp E       &kp R       &kp T               &kp Y       &kp U       &kp I       &kp O       
 &kp Q       &kp A       &mt LCTRL S &mt LALT D  &mt LSHFT F &kp G               &kp H       &mt RSHFT J &mt RALT K  &mt RCTRL L &kp P       &kp BSPC    
             &kp Z       &kp X       &kp C       &kp V                                       &kp M       &kp COMMA   &kp DOT     &kp RET     
-                                                &lt 4 B     &mt LCTRL TAB       &mt RGUI SPACE &lt 5 N  
+                                                &lt 4 B     &mt LGUI TAB        &mt RGUI SPACE &lt 5 N  
             >;
         };
 
         layer_mac_math {
             bindings = <
-                        &kp N1      &kp N2      &kp N3      &trans              &kp EQUAL   &kp LT      &kp UNDER   &kp GT      
-&kp PLUS    &kp N0      &mt LCTRL N4 &mt LALT N5 &mt LSHFT N6 &kp DOT           &kp LS(INT1) &mt RSHFT COLON &mt RALT MINUS &mt RCTRL DQT &kp FSLH &kp PRCNT 
-            &kp DLLR    &kp N7      &kp N8      &kp N9                                      &kp EXCL    &kp QMARK   &kp SQT     &kp SEMI    
+                        &kp N1      &kp N2      &kp N3      &trans              &kp CARET   &kp LT      &kp EQUAL   &kp GT      
+&kp TILDE   &kp N0      &mt LCTRL N4 &mt LALT N5 &mt LSHFT N6 &kp DOT           &kp UNDER   &mt RSHFT PLUS &mt RALT MINUS &mt RCTRL STAR &kp FSLH &kp PRCNT 
+            &kp DLLR    &kp N7      &kp N8      &kp N9                                      &kp EXCL    &kp QMARK   &kp COLON   &kp SEMI    
                                                 &none       &trans              &trans      &lt 6 N     
             >;
         };
 
         layer_mac_navi {
             bindings = <
-                        &kp RBKT    &kp AT      &kp NUHS    &kp CARET           &kp C_VOL_UP &kp ESC    &kp UP      &kp LS(CAPS) 
-&kp LBKT    &kp HASH    &mt LCTRL STAR &mt LALT AMPS &mt LSHFT LPAR &kp LS(INT3) &kp C_VOL_DN &kp LEFT  &kp DOWN    &kp RIGHT   &kp C_BRI_UP &kp PSCRN  
-            &kp INT1    &kp RBRC    &kp LBRC    &kp TILDE2                                  &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_BRI_DN 
+                        &kp LBKT    &kp DQT     &kp RBKT    &kp AMPS            &kp C_VOL_UP &kp ESC    &kp UP      &kp CAPS    
+&kp AT      &kp HASH    &mt LCTRL LPAR &mt LALT SQT &mt LSHFT RPAR &kp PIPE     &kp C_VOL_DN &kp LEFT   &kp DOWN    &kp RIGHT   &kp C_BRI_UP &kp PSCRN  
+            &kp BSLH    &kp LBRC    &kp GRAVE   &kp RBRC                                    &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_BRI_DN 
                                                 &lt 6 B     &trans              &trans      &none       
             >;
         };
