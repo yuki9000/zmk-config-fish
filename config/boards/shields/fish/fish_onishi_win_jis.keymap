@@ -22,6 +22,7 @@
 
 &lt {
     flavor = "balanced";
+    tapping-term-ms = <175>;
     quick-tap-ms = <200>;
 };
 
@@ -60,7 +61,7 @@
 
     combos {
         compatible = "zmk,combos";
-        timeout-ms = <150>;
+        timeout-ms = <100>;
         require-prior-idle-ms = <150>;
 
         combo_lang2 {
@@ -71,6 +72,16 @@
         combo_lang1 {
             key-positions = <25 26>;
             bindings = <&kp INT2>;
+        };
+
+        combo_reset_L {
+            key-positions = <3 8 13>;
+            bindings = <&bootloader>;
+        };
+
+        combo_reset_R {
+            key-positions = <4 14 19>;
+            bindings = <&bootloader>;
         };
     };
     
