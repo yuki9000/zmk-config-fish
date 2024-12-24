@@ -114,7 +114,7 @@
         layer_navi {
             bindings = <
                         &kp RBKT    &kp AT      &kp NUHS    &kp CARET           &kp C_VOL_UP &kp ESC    &kp UP      &kp LS(CAPS) 
-&kp LBKT    &kp HASH    &mt LGUI STAR &mt LALT AMPS &mt LSHFT LPAR &kp LS(INT3) &kp C_VOL_DN &kp LEFT   &kp DOWN    &kp RIGHT   &kp C_BRI_UP &kp LS(LG(N3)) 
+&kp LBKT    &kp HASH    &mt LGUI STAR &mt LALT AMPS &mt LSHFT LPAR &kp LS(INT3) &kp C_VOL_DN &kp LEFT   &kp DOWN    &kp RIGHT   &kp C_BRI_UP &kp PSCRN 
             &kp INT1    &kp RBRC    &kp LBRC    &kp TILDE2                                  &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_BRI_DN 
                                                 &lt 6 B     &trans              &trans      &none       
             >;
@@ -141,7 +141,7 @@
         layer_mac_navi {
             bindings = <
                         &kp RBKT    &kp AT      &kp NUHS    &kp CARET           &kp C_VOL_UP &kp ESC    &kp UP      &kp LS(CAPS) 
-&kp LBKT    &kp HASH    &mt LCTRL STAR &mt LALT AMPS &mt LSHFT LPAR &kp LS(INT3) &kp C_VOL_DN &kp LEFT  &kp DOWN    &kp RIGHT   &kp C_BRI_UP &kp PSCRN  
+&kp LBKT    &kp HASH    &mt LCTRL STAR &mt LALT AMPS &mt LSHFT LPAR &kp LS(INT3) &kp C_VOL_DN &kp LEFT  &kp DOWN    &kp RIGHT   &kp C_BRI_UP &kp LS(LG(N3))
             &kp INT1    &kp RBRC    &kp LBRC    &kp TILDE2                                  &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_BRI_DN 
                                                 &lt 6 B     &trans              &trans      &none       
             >;
