@@ -66,12 +66,12 @@
         require-prior-idle-ms = <150>;
 
         combo_lang2 {
-            key-positions = <21 22>;
+            key-positions = <11 12>;
             bindings = <&kp LANG2>;
         };
 
         combo_lang1 {
-            key-positions = <25 26>;
+            key-positions = <15 16>;
             bindings = <&kp LANG1>;
         };
 
@@ -158,6 +158,33 @@
                         &bt BT_SEL 4 &bt BT_CLR &bt BT_CLR_ALL &out OUT_TOG     &tog 3      &kp INS     &kp HOME    &kp PG_UP   
 &kp F1      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &kp F6          &kp F7      &kp DEL     &kp END     &kp PG_DN   &kp K_APP   &kp F12     
             &kp F2      &kp F3      &kp F4      &kp F5                                      &kp F8      &kp F9      &kp F10     &kp F11     
+                                                &none       &none               &none       &none       
+            >;
+        };
+
+        layer_extra_1 {
+            bindings = <
+                        &none       &none       &none       &none               &none       &none       &none       &none
+&none       &none       &none       &none       &none       &none               &none       &none       &none       &none       &none       &none 
+            &none       &none       &none       &none                                       &none       &none       &none       &none
+                                                &none       &none               &none       &none       
+            >;
+        };
+
+        layer_extra_2 {
+            bindings = <
+                        &none       &none       &none       &none               &none       &none       &none       &none
+&none       &none       &none       &none       &none       &none               &none       &none       &none       &none       &none       &none 
+            &none       &none       &none       &none                                       &none       &none       &none       &none
+                                                &none       &none               &none       &none       
+            >;
+        };
+
+        layer_extra_3 {
+            bindings = <
+                        &none       &none       &none       &none               &none       &none       &none       &none
+&none       &none       &none       &none       &none       &none               &none       &none       &none       &none       &none       &none 
+            &none       &none       &none       &none                                       &none       &none       &none       &none
                                                 &none       &none               &none       &none       
             >;
         };
