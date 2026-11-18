@@ -88,6 +88,11 @@
             key-positions = <20 21 22 23>;
             bindings = <&studio_unlock>;
         };
+
+        combo_bluetooth {
+            key-positions = <24 25 26 27>;
+            bindings = <&mo 7>;
+        };
     };
     
 
@@ -154,17 +159,17 @@
 
         layer_system {
             bindings = <
-                        &bt BT_SEL 4 &bt BT_CLR &bt BT_CLR_ALL &out OUT_TOG     &tog 3      &kp INS     &kp HOME    &kp PG_UP   
-&kp F1      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &kp F6          &kp F7      &kp DEL     &kp END     &kp PG_DN   &kp K_APP   &kp F12     
+                        &none       &none       &none       &out OUT_TOG        &tog 3      &kp INS     &kp HOME    &kp PG_UP   
+&kp F1      &none       &none       &none       &none       &kp F6              &kp F7      &kp DEL     &kp END     &kp PG_DN   &kp K_APP   &kp F12     
             &kp F2      &kp F3      &kp F4      &kp F5                                      &kp F8      &kp F9      &kp F10     &kp F11     
                                                 &none       &none               &none       &none       
             >;
         };
 
-        layer_extra_1 {
+        layer_bluetooth {
             bindings = <
-                        &none       &none       &none       &none               &none       &none       &none       &none       
-&none       &none       &none       &none       &none       &none               &none       &none       &none       &none       &none       &none       
+                        &bt BT_SEL 4 &bt BT_CLR &bt BT_CLR_ALL &none            &none       &none       &none       &none       
+&none       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none           &none       &none       &none       &none       &none       &none       
             &none       &none       &none       &none                                       &none       &none       &none       &none       
                                                 &none       &none               &none       &none       
             >;
