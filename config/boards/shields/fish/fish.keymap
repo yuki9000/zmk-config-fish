@@ -93,6 +93,11 @@
             key-positions = <24 25 26 27>;
             bindings = <&mo 7>;
         };
+
+        combo_tog_8 {
+            key-positions = <3 4 13 14>;
+            bindings = <&tog 8>;
+        };
     };
     
 
@@ -175,12 +180,12 @@
             >;
         };
 
-        layer_extra_2 {
+        layer_L {
             bindings = <
                         &none       &none       &none       &none               &none       &none       &none       &none       
-&none       &none       &none       &none       &none       &none               &none       &none       &none       &none       &none       &none       
-            &none       &none       &none       &none                                       &none       &none       &none       &none       
-                                                &none       &none               &none       &none       
+&none       &none       &mt LALT UP &kp LSHFT   &none       &none               &none       &none       &none       &none       &none       &none       
+            &kp LEFT    &kp DOWN    &kp RIGHT   &none                                       &none       &none       &none       &none       
+                                                &none       &kp LCTRL           &none       &none       
             >;
         };
 
